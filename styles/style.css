@@ -127,15 +127,6 @@ ol {
   text-decoration: none;
 }
 
-.search-form__pseudo-checkbox {
-  width: 19px; 
-  height: 19px;
-  margin-right: 5px;
-  position: relative; 
-  border: 0.8px solid #fff; 
-  background: transparent; 
-}
-
 .search-form__checkbox-list {
   display: flex;  
   flex-direction: row; 
@@ -144,12 +135,21 @@ ol {
   gap: 15px; 
 }
 
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;  
+  border: 0.8px solid #fff;
+  background: transparent;
+  position: relative; 
+}
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: ''; 
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); 
+  margin: auto; 
   width: 15px; 
   height: 15px; 
   background-color: #fff; 
